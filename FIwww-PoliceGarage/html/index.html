@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEO Garage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand">LEO Garage</div>
+      <nav>
+        <button class="tab-btn" data-tab="patrol">Patrol</button>
+        <button class="tab-btn" data-tab="special">Special Forces</button>
+        <button class="tab-btn" data-tab="highcmd">High Command</button>
+        <button class="tab-btn" data-tab="unmarked">Unmarked</button>
+        <button class="tab-btn" data-tab="swat">SWAT</button>
+        <button class="tab-btn" data-tab="other">Other</button>
+      </nav>
+      <button id="exitBtn" class="exit">Exit</button>
+    </aside>
+
+    <main class="content">
+      <h1 id="locationTitle">*Location* - Police Department Garage</h1>
+
+      <div id="vehicleGrid" class="grid"></div>
+
+      <hr class="divider" />
+
+      <section class="leaders">
+        <h2>Department Leaders</h2>
+        <p class="muted">High Command</p>
+        <div id="leaderGrid" class="leader-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
